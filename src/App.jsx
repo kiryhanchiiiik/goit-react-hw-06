@@ -33,7 +33,7 @@ function App() {
 
   // delete contacts
   const onDeleteContact = (ContactId) => {
-    const updatedContacts = items.filter((contact) => contact.id !== ContactId);
+    const updatedContacts = items.filter((item) => item.id !== ContactId);
     console.log(updatedContacts);
     const action = deleteContact(ContactId);
     dispatch(action);
