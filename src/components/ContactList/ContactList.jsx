@@ -7,7 +7,7 @@ const ContactList = () => {
   return (
     <ul className={css.contactsList}>
       {contacts.map((contact) => {
-        <Contact key={contact.id} contact={contact} />;
+        return <Contact key={contact.id} contact={contact} />;
       })}
     </ul>
   );
